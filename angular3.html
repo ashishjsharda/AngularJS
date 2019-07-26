@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>New Angular JS Page</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+</head>
+<body >
+	
+	<div ng-app="" ng-init="countries=[{locale:'en-US',name:'USA'},{locale:'en-IN',name:'INDIA'}]">
+		<p> Enter your name <input type="text" ng-model="name" /></p>
+		<p>Your name is {{name}}</p>
+		<ol>
+			<li ng-repeat="country in countries">
+				{{'County locale seen is ' +  country.locale + ' Name is ' + country.name}}
+			</li>
+		</ol>
+	</div>
+</body>
+</html>
